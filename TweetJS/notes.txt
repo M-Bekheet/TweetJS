@@ -1,0 +1,15 @@
+/*
+  Features added:
+    > Random Name from an API
+    > Getting jokes from an API
+    > Adding tweets
+    > Adding/fetching tweets from the local storage
+    > Alerts for failed/succeeded tweets & alerts for failing to grap names and jokes from APIs
+    > Added loading icons while fetching names and jokes
+    > Added Tweets Stats: >> Number of tweets, last tweet date
+    > Read more/less buttons (to expand the content)
+
+  Features to add in the future:
+    > Make Link for authors and show posts added by them
+    > Add votes to tweets, arrange them due to votes, add filter posts by 'votes', 'date' (Th)
+*/
