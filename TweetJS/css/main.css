@@ -1,0 +1,222 @@
+/*
+  > Defaults
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* input {
+  border: none;
+}
+
+body {
+  background: #1a1a1b;
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  line-height: 1.8em;
+  letter-spacing: 1.5px;
+}
+
+::selection {
+  background: #ff4500;
+  color: #fff !important;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.alert {
+  padding: 10px;
+}
+
+.heading {
+  font-size: 2em;
+  padding: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.rotate {
+  animation: rotate 0.6s 0s linear infinite;
+  transform-origin: 50% 50%;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+textarea {
+  resize: vertical;
+  padding: 5px;
+}
+
+.dark {
+  background: #1a1a1b;
+  color: #b2b2b5;
+}
+.dark button {
+  border: none;
+  color: #f7f7f7;
+  background: #6f7071;
+  padding: 6px 18px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+/*
+  > Tweet Form: Start
+*/
+#add-tweet-wrapper {
+  text-align: center;
+  padding: 30px;
+}
+#add-tweet-wrapper .add-tweet {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+#add-tweet-wrapper .add-tweet.loading .overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 100%;
+  z-index: 5;
+  padding: 10px;
+  background: #1a1a1b;
+  background-image: url(../images/loader.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+#add-tweet-wrapper .add-tweet #tweet-title, #add-tweet-wrapper .add-tweet #tweet-author {
+  flex: 1;
+  flex-direction: row;
+}
+#add-tweet-wrapper .add-tweet #tweet-title input, #add-tweet-wrapper .add-tweet #tweet-author input {
+  width: 100%;
+  padding: 10px 5px;
+  border-bottom: 1px solid #343536;
+  margin-bottom: 5px;
+}
+#add-tweet-wrapper .add-tweet #tweet-author {
+  display: flex;
+  position: relative;
+}
+#add-tweet-wrapper .add-tweet #tweet-author label {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  padding: 2px;
+  margin: auto;
+  right: 4px;
+  top: 3px;
+  cursor: pointer;
+}
+#add-tweet-wrapper .add-tweet #tweet-author label img {
+  max-width: 80%;
+  vertical-align: middle;
+}
+#add-tweet-wrapper .add-tweet .buttons-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  font-weight: 800;
+}
+#add-tweet-wrapper .add-tweet .buttons-wrapper button {
+  outline: none;
+  flex: 1 0 0;
+  background: #ff4500;
+  font-weight: 700;
+}
+#add-tweet-wrapper .add-tweet .buttons-wrapper button.wanna-normal-tweet {
+  background: #18D2BC;
+}
+#add-tweet-wrapper .add-tweet .buttons-wrapper button.tweet-btn {
+  flex: 1 100%;
+  background: #0079d3;
+}
+#add-tweet-wrapper .add-tweet .buttons-wrapper .bring-joke-img {
+  width: 14px;
+}
+#add-tweet-wrapper .tweets-stats {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+/*
+  > Tweet Form: End
+*/
+/*
+  > Tweet: Start
+*/
+.tweet {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  margin: 40px 0;
+  text-align: left;
+  letter-spacing: 0.8px;
+}
+.tweet .tweet-title {
+  color: #f7f7f7;
+  padding: 10px 0;
+  border-bottom: 1px solid #343536;
+}
+.tweet .tweet-content {
+  padding: 16px 0;
+}
+.tweet .tweet-content p {
+  word-break: break-all;
+}
+.tweet .tweet-data {
+  padding: 10px;
+  border-top: 1px solid #343536;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.tweet .tweet-data .author-name, .tweet .tweet-data .tweet-date {
+  color: #f7f7f7;
+}
+.tweet .read-more a {
+  display: flex;
+  justify-content: flex-end;
+  color: #f7f7f7;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/*
+  > Tweet Form: End
+*/
+/*
+  > Responsive: Start
+*/
+@media (min-width: 768px) {
+  .container {
+    width: 80%;
+    margin: auto;
+    max-width: 800px;
+  }
+
+  .tweet .tweet-title, .tweet .tweet-content p {
+    padding: 10px;
+  }
+}
+/*
+  > Responsive: End
+*/
+
+/*# sourceMappingURL=main.css.map */
